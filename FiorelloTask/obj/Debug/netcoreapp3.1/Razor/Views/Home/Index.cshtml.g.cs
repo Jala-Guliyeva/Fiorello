@@ -27,7 +27,7 @@ using FiorelloTask.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d5aa60cdc1e21ffe1314a15f7b63b18527c1d4f4", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f4dfc1b69cca9aa676ab269fb23f0694054be4c4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2fe40fc9a8770d809506961e6237ce31a3a3391d", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<HomeVM>
     #nullable disable

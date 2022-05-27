@@ -144,3 +144,10 @@ C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\bin\Debug\netcoreapp3.1\zh-Ha
 C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProductPartial.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\_ViewImports.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\_ViewStart.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Category\Index.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Category\Detail.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloTask\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Category\Delete.cshtml.g.cs

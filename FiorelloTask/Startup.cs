@@ -51,6 +51,12 @@ namespace FiorelloTask
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    "areas",
+             "{area:exists}/{controller=dashboard}/{action=Index}/{id?}"
+            );
+               
+            
+            endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=home}/{action=index}/{id?}"
                     );
