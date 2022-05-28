@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UWGHBuXHrL4GgrF2R31Rhcz1V7Y6YOkuEXLK3kg/FszqAPEdG9BBMfYs7e+VVerm+JdlP4CQBvlP3d4Gk7fjDA==",
+  "dgSpecHash": "U5sJYEdLJBKXoMokaetsDy15S2g21g6NvSgg8InbRdYQcsT/RAfO27eHdxL1e1FeHak34wS7D5tbYxJyYjHsbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloTask\\FiorelloTask\\FiorelloTask.csproj",
+  "projectFilePath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloAdminF\\FiorelloTask\\FiorelloTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TOSHIBA\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\TOSHIBA\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

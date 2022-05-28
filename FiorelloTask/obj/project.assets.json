@@ -8480,11 +8480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloTask\\FiorelloTask\\FiorelloTask.csproj",
+      "projectUniqueName": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloAdminF\\FiorelloTask\\FiorelloTask.csproj",
       "projectName": "FiorelloTask",
-      "projectPath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloTask\\FiorelloTask\\FiorelloTask.csproj",
+      "projectPath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloAdminF\\FiorelloTask\\FiorelloTask.csproj",
       "packagesPath": "C:\\Users\\TOSHIBA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloTask\\FiorelloTask\\obj\\",
+      "outputPath": "C:\\Users\\TOSHIBA\\Desktop\\FiorelloAdminF\\FiorelloTask\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TOSHIBA\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -20,7 +20,6 @@ namespace FiorelloTask.Controllers
             HomeVM homeVm = new HomeVM();
             homeVm.sliders= _context.Sliders.ToList();
             homeVm.pageIntro= _context.PageIntros.FirstOrDefault();
-            homeVm.products = _context.Products.ToList();
             homeVm.categories = _context.Categories.ToList();
             return View(homeVm);
         }
