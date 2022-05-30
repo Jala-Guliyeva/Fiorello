@@ -18,12 +18,12 @@ namespace FiorelloTask.Controllers
         public IActionResult Index()
         {
             ViewBag.ProductCount=_context.Products.Count();
-            List<Product> products = _context.Products.Include(p => p.Category).Take(10).ToList();
-            return View();
+            List<Product> products = _context.Products.Include(p => p.Category).Take(2).ToList();
+            return View(products);
         }
         public IActionResult LoadMore(int skip)
         {
-            List<Product> products = _context.Products.Include(p => p.Category).Skip(skip).Take(10).ToList();
+            List<Product> products = _context.Products.Include(p => p.Category).Skip(skip).Take(2).ToList();
             return PartialView("_ProductPartial", products);
         }
     }

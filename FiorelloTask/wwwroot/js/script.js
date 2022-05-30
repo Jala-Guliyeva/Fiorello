@@ -3,15 +3,16 @@ $(document).ready(function () {
     //PARTIALVIEW
 
     let skip = 2;
-    $(document).on('click', "#loadmore", function () {
+    $(document).on("click", "#loadmore", function () {
         let productCount = $("#productCount").val();
         $.ajax({
             method: "get",
             url: "product/loadmore?skip=" + skip,
             success: function (res) {
                 skip += 2;
-                if (skip>=productCount) {
-                    $("#loadmore").remove
+                $("#listProduct").append(res);
+                if (skip >= productCount) {
+                    $("#loadmore").remove();
                 }
             }
         })
@@ -43,7 +44,7 @@ $(document).ready(function () {
 
     // SLIDER
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".slider").owlCarousel(
             {
                 items: 1,
@@ -51,12 +52,11 @@ $(document).ready(function () {
                 autoplay: true
             }
         );
-      });
+    });
 
     // PRODUCT
 
-    $(document).on('click', '.categories', function(e)
-    {
+    $(document).on('click', '.categories', function (e) {
         e.preventDefault();
         $(this).next().next().slideToggle();
     })
@@ -65,64 +65,54 @@ $(document).ready(function () {
         e.preventDefault();
         let category = $(this).attr('data-id');
         let products = $('.product-item');
-        
+
         products.each(function () {
-            if(category == $(this).attr('data-id'))
-            {
+            if (category == $(this).attr('data-id')) {
                 $(this).parent().fadeIn();
             }
-            else
-            {
+            else {
                 $(this).parent().hide();
             }
         })
-        if(category == 'all')
-        {
+        if (category == 'all') {
             products.parent().fadeIn();
         }
     })
 
     // ACCORDION 
 
-    $(document).on('click', '.question', function()
-    {   
-       $(this).siblings('.question').children('i').removeClass('fa-minus').addClass('fa-plus');
-       $(this).siblings('.answer').not($(this).next()).slideUp();
-       $(this).children('i').toggleClass('fa-plus').toggleClass('fa-minus');
-       $(this).next().slideToggle();
-       $(this).siblings('.active').removeClass('active');
-       $(this).toggleClass('active');
+    $(document).on('click', '.question', function () {
+        $(this).siblings('.question').children('i').removeClass('fa-minus').addClass('fa-plus');
+        $(this).siblings('.answer').not($(this).next()).slideUp();
+        $(this).children('i').toggleClass('fa-plus').toggleClass('fa-minus');
+        $(this).next().slideToggle();
+        $(this).siblings('.active').removeClass('active');
+        $(this).toggleClass('active');
     })
 
     // TAB
 
-    $(document).on('click', 'ul li', function()
-    {   
+    $(document).on('click', 'ul li', function () {
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
         let dataId = $(this).attr('data-id');
         $(this).parent().next().children('p.active').removeClass('active');
 
-        $(this).parent().next().children('p').each(function()
-        {
-            if(dataId == $(this).attr('data-id'))
-            {
+        $(this).parent().next().children('p').each(function () {
+            if (dataId == $(this).attr('data-id')) {
                 $(this).addClass('active')
             }
         })
     })
 
-    $(document).on('click', '.tab4 ul li', function()
-    {   
+    $(document).on('click', '.tab4 ul li', function () {
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
         let dataId = $(this).attr('data-id');
         $(this).parent().parent().next().children().children('p.active').removeClass('active');
 
-        $(this).parent().parent().next().children().children('p').each(function()
-        {
-            if(dataId == $(this).attr('data-id'))
-            {
+        $(this).parent().parent().next().children().children('p').each(function () {
+            if (dataId == $(this).attr('data-id')) {
                 $(this).addClass('active')
             }
         })
@@ -130,31 +120,31 @@ $(document).ready(function () {
 
     // INSTAGRAM
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".instagram").owlCarousel(
             {
                 items: 4,
                 loop: true,
                 autoplay: true,
-                responsive:{
-                    0:{
-                        items:1
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    576:{
-                        items:2
+                    576: {
+                        items: 2
                     },
-                    768:{
-                        items:3
+                    768: {
+                        items: 3
                     },
-                    992:{
-                        items:4
+                    992: {
+                        items: 4
                     }
                 }
             }
         );
-      });
+    });
 
-      $(document).ready(function(){
+    $(document).ready(function () {
         $(".say").owlCarousel(
             {
                 items: 1,
@@ -162,5 +152,5 @@ $(document).ready(function () {
                 autoplay: true
             }
         );
-      });
-})
+    });
+});
