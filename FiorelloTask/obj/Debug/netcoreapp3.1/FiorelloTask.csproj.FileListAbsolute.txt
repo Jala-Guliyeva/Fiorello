@@ -159,3 +159,7 @@ C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Fio
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\FiorelloTask.pdb
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\FiorelloTask.Views.dll
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\FiorelloTask.Views.pdb
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Blog\Create.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Blog\Delete.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Blog\Index.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Search.cshtml.g.cs

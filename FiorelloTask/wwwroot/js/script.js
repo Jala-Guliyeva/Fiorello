@@ -17,6 +17,24 @@ $(document).ready(function () {
             }
         })
     })
+
+    //SEARCH
+
+    $(document).on("keyup", "#search-input", function () {
+        let inputVal = $(this).val().trim();
+        $("searchList li").slice(1).remove();
+        $.ajax({
+            method: "get",
+            url: "product/searchproduct?search=" + inputVal,
+            success: function (res) {
+                $("#searchList").append(res);
+            }
+        })
+    })
+
+
+
+
     // HEADER
 
     $(document).on('click', '#search', function () {
