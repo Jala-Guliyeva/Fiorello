@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $(document).on("keyup", "#search-input", function () {
         let inputVal = $(this).val().trim();
-        $("searchList li").slice(1).remove();
+        $("#searchList li").slice(1).remove();
         $.ajax({
             method: "get",
             url: "product/searchproduct?search=" + inputVal,
