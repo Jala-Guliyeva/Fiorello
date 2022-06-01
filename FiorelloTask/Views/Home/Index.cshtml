@@ -11,6 +11,12 @@
     <main>
 
         <!-- SLIDER START -->
+       @if (TempData["Fail"]!=null)
+      {
+           <div class="alert alert-danger" id="failAlert" role="alert">
+         @TempData["Fail"]
+        </div>
+      }
 
         <section id="slider">
             <div class="owl-carousel slider">
@@ -340,3 +346,11 @@
 
     <!-- MAIN END -->
 
+    @section Scripts{
+    <script>
+        let alertDiv=document.getElementById("failAlert");
+       setTimeout(function(){
+           alertDiv.remove()
+       },3000)
+    </script>
+    }
