@@ -21,6 +21,11 @@ namespace FiorelloTask.Controllers
             List<Product> products = _context.Products.Include(p => p.Category).Take(2).ToList();
             return View(products);
         }
+        public IActionResult LoadMore(int skip)
+        {
+            List<Product> products = _context.Products.Include(p => p.Category).Take(2).ToList();
+            return PartialView("_ProductPartial",products);
+        }
       public IActionResult SearchProduct(string search)
         {
             List<Product>products=_context.Products.Where(p=>p.Name.ToLower().Contains(search.ToLower())).Take(10).ToList();
