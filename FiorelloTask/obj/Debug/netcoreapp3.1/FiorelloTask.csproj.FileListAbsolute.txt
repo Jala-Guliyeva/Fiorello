@@ -165,3 +165,10 @@ C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Raz
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Search.cshtml.g.cs
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Basket.cshtml.g.cs
 C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Areas\AdminF\Views\Product\Index.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\TOSHIBA\Desktop\FiorelloAdminF\FiorelloTask\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
