@@ -1,7 +1,9 @@
-﻿using FiorelloTask.Models;
+﻿using FiorelloTask.Helpers;
+using FiorelloTask.Models;
 using FiorelloTask.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
@@ -11,10 +13,13 @@ namespace FiorelloTask.Controllers
     {
         private UserManager<AppUser> _userManager;
         private SignInManager<AppUser> _signInManager;
-        public AccountController(UserManager<AppUser> userManager,SignInManager<AppUser>signInManager)
+        private RoleManager<IdentityRole> _roleManager;
+        public AccountController(UserManager<AppUser> userManager,SignInManager<AppUser>signInManager,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
         public IActionResult Index()
         {
@@ -51,7 +56,7 @@ namespace FiorelloTask.Controllers
                 }
                 return View(register);
             }
-
+            await _userManager.AddToRoleAsync(newUser, Roles.Admin.ToString());
             await _signInManager.SignInAsync(newUser, true);
             return RedirectToAction("index","home");
 
@@ -62,7 +67,7 @@ namespace FiorelloTask.Controllers
         }
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Login(LoginVM login)
+        public async Task<IActionResult> Login(LoginVM login,string ReturnUrl)
         {
             if (!ModelState.IsValid) return View();
 
@@ -88,12 +93,37 @@ namespace FiorelloTask.Controllers
                 return View(login);
 
             }
-            return RedirectToAction("index", "home");
+
+            foreach (var item in await _userManager.GetRolesAsync(dbUser))
+            {
+                if (item.Contains(Roles.Admin.ToString()))
+                {
+                    return RedirectToAction("index", "dashboard", new { area = "adminF" });
+                }
+            }
+
+            if (ReturnUrl==null)
+            {
+
+                return RedirectToAction("index", "home");
+            }
+            return Redirect(ReturnUrl);
         }
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
+        }
+
+        public async Task CreateRole()
+        {
+            foreach (var item in Enum.GetValues(typeof(Roles)))
+            {
+                if (!await _roleManager.RoleExistsAsync(item.ToString()))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole { Name = item.ToString() });
+                }
+            }
         }
     }
 }

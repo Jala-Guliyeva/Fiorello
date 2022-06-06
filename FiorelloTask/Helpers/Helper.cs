@@ -17,4 +17,11 @@ namespace FiorelloTask.Helpers
             }
         }
     }
+
+   public enum Roles
+    {
+        Admin,
+        Member,
+        SuperAdmin
+    }
 }

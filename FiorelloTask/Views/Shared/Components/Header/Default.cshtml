@@ -124,7 +124,8 @@
                                }
                                else{
                                       <li class="nav-item">
-                                    <a asp-controller="account" asp-action="login" class="nav-link" >Login</a>
+                                    <a asp-controller="account" asp-action="login"  asp-route-ReturnUrl="@Context.Request.Path.Value"
+                                    class="nav-link" >Login</a>
                                 </li>
                                }
                               

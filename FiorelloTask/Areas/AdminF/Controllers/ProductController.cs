@@ -10,6 +10,7 @@ using System.Linq;
 namespace FiorelloTask.Areas.AdminF.Controllers
 {
     [Area("AdminF")]
+    
     public class ProductController : Controller
     {
     private AppDbContext _context;

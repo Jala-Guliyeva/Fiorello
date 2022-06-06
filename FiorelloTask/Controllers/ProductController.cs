@@ -1,5 +1,6 @@
 ﻿using FiorelloTask.DAL;
 using FiorelloTask.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 
 namespace FiorelloTask.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private AppDbContext _context;
@@ -15,6 +17,7 @@ namespace FiorelloTask.Controllers
             _context = context;
 
         }
+        [Authorize]
         public IActionResult Index()
         {
             ViewBag.ProductCount=_context.Products.Count();
