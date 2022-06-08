@@ -21,14 +21,20 @@ namespace FiorelloTask.Controllers
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
+
+
         public IActionResult Index()
         {
             return View();
         }
+
+
         public IActionResult Register()
         {
             return View();
         }
+
+
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -61,10 +67,14 @@ namespace FiorelloTask.Controllers
             return RedirectToAction("index","home");
 
         }
+       
+
         public IActionResult Login()
         {
             return View();
         }
+        
+        
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Login(LoginVM login,string ReturnUrl)
@@ -109,6 +119,7 @@ namespace FiorelloTask.Controllers
             }
             return Redirect(ReturnUrl);
         }
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();

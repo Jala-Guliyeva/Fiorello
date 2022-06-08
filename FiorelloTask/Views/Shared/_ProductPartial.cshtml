@@ -1,6 +1,6 @@
 ﻿ @model IEnumerable<Product>
 
- @foreach (Product item in Model)
+ @foreach (var item in Model)
                     {
                     <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                         <div class="product-item text-center" data-id="@item.Category.Name.ToLower()">
@@ -13,7 +13,9 @@
                                 <h6>@item.Name</h6>
                             </div>
                             <div class="price">
-                                <span class="text-black-50">Add to cart</span>
+                               <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id">
+                                    <span class="text-black-50">Add to cart</span>
+                               </a>
                                 <span class="text-black-50">$@item.Price</span>
                             </div>
                         </div>

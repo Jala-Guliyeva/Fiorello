@@ -130,7 +130,7 @@ namespace FiorelloTask.Controllers
 
             Product dbProduct = _context.Products.FirstOrDefault(p => p.Id == id);
 
-            if (dbProduct.Count>existProduct.Count)
+            if (dbProduct.Count>=existProduct.Count)
             {
                 existProduct.Count++;
             }

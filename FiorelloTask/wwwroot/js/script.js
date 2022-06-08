@@ -7,7 +7,7 @@ $(document).ready(function () {
         let productCount = $("#productCount").val();
         $.ajax({
             method: "get",
-            url: "product/loadmore?skip=" + skip,
+            url: "product/loadmore?skip="+skip,
             success: function (res) {
                 skip += 2;
                 $("#listProduct").append(res);
